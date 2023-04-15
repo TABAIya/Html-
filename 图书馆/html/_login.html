@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/Loading.css">
+</head>
+<body> 
+    <div class="back" id="back">
+        <div class="log" id="log"> 
+            <div class="logtitle">《图书馆的幽灵少女》</div><p></p>
+            <form action="home.html" id="logbody" class="logbody" onsubmit="return login()">
+                <input type="text" id="zh" size="20" class="txt" placeholder="账户">
+                <br>
+                <input type="password" id="mm" size="20" class="txt" placeholder="密码">
+                <br>
+                <input type="submit" value="进入图书馆" id="sub" class="sub">
+				
+            </form>     
+        </div>
+		
+<!-- 		<div id="audioPay"> -->
+<!-- 			<audio controls autoplay="autoplay" loop="loop" class="music" style="display: none;"> -->
+<!-- 			<audio controls autoplay="autoplay" loop="loop" class="music" hidden="true">
+				<source src="../img/BGM001.mp3" type="audio/mpeg" >
+			</audio>
+		</div> -->
+		
+		<!-- 新建div容器，其中不能设置display:none，不然会无法播放声音，这边是对音频进行设置hidden属性 -->
+		<!-- js中，向容器中插入音频容器 -->
+
+		<embed src="../img/BGM001.mp3" autostart="true" loop="true" hidden="true"></embed>
+
+    </div>        
+    <div class="con" id="con">
+        <div class="load">
+            <div class="dot" style="--i:0"></div>
+            <div class="dot" style="--i:1"></div>
+            <div class="dot" style="--i:2"></div> 
+            <div class="dot" style="--i:3"></div>
+            <div class="dot" style="--i:4"></div>
+            <div class="dot" style="--i:5"></div>
+           <!-- <div class="dot" style="--i:6"></div> -->
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+
+</body>
+</html>
